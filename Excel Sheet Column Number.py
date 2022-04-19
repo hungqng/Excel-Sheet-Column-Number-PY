@@ -10,3 +10,12 @@ class Solution:
             column += (ord(columnTitle[i]) - 64) * multiplier
             multiplier *= 26
         return column
+
+        # Solution 2
+        # ans, pos = 0, 0
+        # for letter in reversed(columnTitle):
+        #     digit = ord(letter)-64
+        #     ans += digit * 26**pos
+        #     pos += 1
+            
+        # return ans
